@@ -21,3 +21,7 @@ A responsive, scrollable invitation website with a berry-sweet palette, live cou
 4. GitHub will provide a public website link after deployment.
 
 The page is plain HTML, CSS, and JavaScript, so it does not require a paid website builder or server.
+
+
+## Animated berry update
+This edition adds floating strawberry background stickers, bouncy elements, playful photo tilts, and a clickable berry-rain button. Motion is reduced automatically for visitors who prefer reduced motion. Upload the contents of this folder (not the outer folder) to your GitHub Pages repository to update the live site at the same URL.
