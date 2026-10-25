@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fff0f0">
+  <meta name="description" content="Join Jon and Arianna for a baby shower on November 21, 2026 in San Antonio, Texas.">
+  <title>Berry Sweet Baby Shower | Jon & Arianna</title>
+  <style>
+    :root {
+      --blush: #ffe5e8;
+      --pale: #fffaf3;
+      --rose: #c83e59;
+      --deep: #76283d;
+      --sage: #71865a;
+      --ink: #58323b;
+      --line: #f0c3c8;
+      --white: #fff;
+      --berry: #a91f43;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; color: var(--ink); background: var(--pale); font-family: Georgia, "Times New Roman", serif; line-height: 1.6; }
+    a { color: inherit; }
+    .site-nav { position: sticky; top: 0; z-index: 10; background: rgba(255,250,243,.95); backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); }
+    .nav-inner { max-width: 1080px; margin: auto; padding: 12px 20px; display: flex; justify-content: space-between; align-items: center; gap: 16px; }
+    .brand { font-size: .96rem; color: var(--deep); font-weight: bold; white-space: nowrap; }
+    .nav-links { display: flex; gap: 16px; flex-wrap: wrap; justify-content: flex-end; font-family: Arial, sans-serif; font-size: .82rem; }
+    .nav-links a { text-decoration: none; } .nav-links a:hover { color: var(--rose); }
+    .section { padding: 72px 20px; } .inner { width: min(100%, 980px); margin: auto; } .center { text-align: center; }
+    .eyebrow { text-transform: uppercase; letter-spacing: .22em; font: 700 .72rem/1.5 Arial, sans-serif; color: var(--rose); }
+    h1, h2, h3 { color: var(--deep); line-height: 1.15; font-weight: normal; }
+    h1 { font-size: clamp(2.8rem, 8vw, 5.8rem); margin: 14px 0; } h2 { font-size: clamp(2rem, 5vw, 3.2rem); margin: 0 0 18px; } h3 { font-size: 1.5rem; margin: 0 0 10px; }
+    p { margin: 0 0 14px; }
+    .hero { position: relative; overflow: hidden; padding: 80px 20px 74px; background: radial-gradient(ellipse at 4% 6%, rgba(200,62,89,.19), transparent 30%), radial-gradient(ellipse at 96% 90%, rgba(200,62,89,.2), transparent 32%), linear-gradient(145deg, #fffaf3, #ffe5e8 58%, #fff6ed); }
+    .hero:before, .hero:after { content: "🍓"; position: absolute; opacity: .20; font-size: clamp(5rem, 14vw, 11rem); pointer-events: none; filter: saturate(.8); }
+    .hero:before { left: -18px; top: 8px; transform: rotate(-18deg); } .hero:after { right: -14px; bottom: -15px; transform: rotate(18deg); }
+    .hero-content { max-width: 850px; margin: auto; position: relative; z-index: 1; }
+    .hero-frame { border: 1px solid rgba(200,62,89,.48); border-radius: 180px 180px 24px 24px; padding: 12px; max-width: 760px; margin: 30px auto 0; }
+    .hero-frame-inner { border: 1px dashed rgba(200,62,89,.48); border-radius: 170px 170px 16px 16px; padding: clamp(32px, 6vw, 60px) 18px; background: rgba(255,255,255,.62); }
+    .names { font-size: clamp(1.6rem, 4vw, 2.4rem); color: var(--berry); margin: 14px 0; }
+    .event-line { font-family: Arial, sans-serif; letter-spacing: .08em; text-transform: uppercase; font-size: .88rem; }
+    .button-row { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-top: 25px; }
+    .btn { display: inline-flex; justify-content: center; align-items: center; gap: 8px; padding: 13px 20px; min-height: 46px; border-radius: 999px; text-decoration: none; font: 700 .88rem Arial, sans-serif; border: 1px solid var(--rose); transition: transform .15s, background .15s; }
+    .btn:hover { transform: translateY(-2px); } .btn-primary { background: var(--rose); color: white; } .btn-outline { color: var(--deep); background: rgba(255,255,255,.75); }
+    .soft { background: #fff0f0; } .white { background: var(--white); } .narrow { max-width: 760px; margin: auto; }
+    .divider-flower { color: var(--rose); font-size: 1.5rem; margin: 18px 0; }
+    .countdown { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: 12px; max-width: 650px; margin: 30px auto 0; }
+    .time-card { border: 1px solid var(--line); border-radius: 16px; background: #fffaf3; padding: 18px 8px; box-shadow: 0 5px 18px rgba(118,40,61,.04); }
+    .time-num { display: block; font-size: clamp(1.8rem, 5vw, 3rem); color: var(--deep); line-height: 1.15; } .time-label { font: 700 .68rem Arial, sans-serif; letter-spacing: .13em; color: var(--rose); }
+    .details-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 18px; margin-top: 30px; }
+    .detail-card { background: white; border: 1px solid var(--line); border-radius: 22px; padding: 26px; }
+    .detail-icon { font-size: 1.8rem; margin-bottom: 8px; } .address { font-family: Arial, sans-serif; font-size: .96rem; }
+    .gallery { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 14px; margin-top: 30px; }
+    .photo-slot { min-height: 230px; border-radius: 22px; overflow: hidden; position: relative; display: flex; justify-content: center; align-items: center; text-align: center; padding: 18px; background: radial-gradient(circle at 20% 20%, #fff 0 8%, transparent 9%), linear-gradient(145deg,#ffd9df,#fff7e9 52%,#f5c2cd); border: 1px dashed #d9798b; color: var(--deep); }
+    .photo-slot:nth-child(2) { background: linear-gradient(145deg,#fff7e9,#ffd9df,#f6e9cf); } .photo-slot:nth-child(3) { background: linear-gradient(145deg,#e5ebd9,#fff7e9,#ffd9df); }
+    .photo-slot span { display: block; font: 700 .75rem/1.5 Arial, sans-serif; letter-spacing: .07em; text-transform: uppercase; } .photo-slot small { display: block; font: .85rem/1.5 Arial, sans-serif; margin-top: 8px; }
+    .registry-card, .rsvp-card { max-width: 720px; margin: 26px auto 0; padding: clamp(24px,5vw,42px); border: 1px solid var(--line); border-radius: 22px; background: rgba(255,255,255,.88); }
+    .registry-icon { font-size: 2.4rem; } .note { font: .82rem/1.6 Arial, sans-serif; color: #80616a; }
+    .footer { background: #ffe5e8; text-align: center; padding: 34px 20px; color: var(--deep); } .footer .floral { font-size: 1.4rem; color: var(--rose); }
+    .hero-photo { display:block; width:min(310px,78%); aspect-ratio:4/3; object-fit:cover; object-position:center 56%; margin:26px auto 0; border:9px solid #fff; border-radius:22px; box-shadow:0 12px 30px rgba(125,40,57,.19); transform:rotate(-2deg); }
+    .gallery { grid-template-columns: repeat(3,minmax(0,1fr)); }
+    .memory-card { margin:0; padding:9px 9px 16px; background:#fff8f6; border:1px solid #f1c6cf; border-radius:19px; box-shadow:0 5px 16px rgba(120,35,57,.06); }
+    .memory-card img { display:block; width:100%; height:265px; object-fit:cover; border-radius:13px; }
+    .memory-card figcaption { padding:13px 4px 0; color:#8c3450; font-size:.95rem; font-weight:600; }
+    .memory-card.ultrasound img { object-fit:contain; background:#1b1b1b; }
+    @media (max-width: 680px) { .section { padding: 54px 17px; } .nav-inner { align-items: flex-start; flex-direction: column; gap: 7px; } .nav-links { justify-content: flex-start; gap: 13px; } .details-grid, .gallery { grid-template-columns: 1fr; } .photo-slot { min-height: 200px; } .countdown { gap: 6px; } .time-card { padding: 14px 3px; } .time-label { letter-spacing: .04em; font-size: .58rem; } }
+  </style>
+</head>
+<body>
+  <nav class="site-nav" aria-label="Main navigation">
+    <div class="nav-inner">
+      <div class="brand">Jon & Arianna 🍓</div>
+      <div class="nav-links">
+        <a href="#details">Details</a>
+        <a href="#gallery">Photos</a>
+        <a href="#registry">Registry</a>
+        <a href="#rsvp">RSVP</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-content center">
+      <div class="eyebrow">A berry sweet celebration</div>
+      <div class="hero-frame">
+        <div class="hero-frame-inner">
+          <div class="eyebrow">Sweet as can be, please join us for a</div>
+          <h1>Berry Sweet<br>Baby Shower</h1>
+          <div class="divider-flower">🍓 ♥ 🍓</div>
+          <p class="names">Jon & Arianna</p>
+          <p class="event-line">Saturday · November 21 · 2026</p>
+          <p>Our little berry is on the way!</p>
+          <img class="hero-photo" src="photos/couple-studio.jpg" alt="Jon and Arianna together" width="310" height="233">
+          <div class="button-row">
+            <a class="btn btn-primary" href="#details">View the Details ↓</a>
+            <a class="btn btn-outline" href="#rsvp">RSVP</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section white center" id="countdown">
+      <div class="inner">
+        <div class="eyebrow">The countdown is on</div>
+        <h2>A Little Berry Is On The Way</h2>
+        <p class="narrow">We're berry excited to celebrate with the people we love. Save the date and count down with us!</p>
+        <div class="countdown" role="timer" aria-live="off">
+          <div class="time-card"><span class="time-num" id="days">--</span><span class="time-label">DAYS</span></div>
+          <div class="time-card"><span class="time-num" id="hours">--</span><span class="time-label">HOURS</span></div>
+          <div class="time-card"><span class="time-num" id="minutes">--</span><span class="time-label">MINUTES</span></div>
+          <div class="time-card"><span class="time-num" id="seconds">--</span><span class="time-label">SECONDS</span></div>
+        </div>
+        <p class="note" style="margin-top:14px">Countdown is set for 2:00 PM Central Time on November 21, 2026.</p>
+      </div>
+    </section>
+
+    <section class="section soft center" id="details">
+      <div class="inner">
+        <div class="eyebrow">Save the date, sweet friends</div>
+        <h2>All the Sweet Details</h2>
+        <p>Good friends, sweet treats, and a little berry on the way.</p>
+        <div class="details-grid">
+          <article class="detail-card">
+            <div class="detail-icon">🍓</div>
+            <h3>When</h3>
+            <p>Saturday, November 21, 2026</p>
+            <p><strong>2:00 PM</strong></p>
+          </article>
+          <article class="detail-card">
+            <div class="detail-icon">📍</div>
+            <h3>Where</h3>
+            <p><strong>Country Inn & Suites by Radisson</strong></p>
+            <p class="address">6502 Enrique M Barrera Pkwy<br>San Antonio, TX 78227</p>
+            <div class="button-row">
+              <a class="btn btn-primary" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination=Country%20Inn%20%26%20Suites%20by%20Radisson%2C%206502%20Enrique%20M%20Barrera%20Pkwy%2C%20San%20Antonio%2C%20TX%2078227">Get Directions ↗</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section white center" id="gallery">
+      <div class="inner">
+        <div class="eyebrow">Our little berry story</div>
+        <h2>Sweet Little Memories</h2>
+        <p class="narrow">From our favorite adventures to the first glimpse of our little berry, every moment has been sweeter together.</p>
+        <div class="gallery">
+          <figure class="memory-card"><img src="photos/couple-studio.jpg" alt="A portrait of Jon and Arianna" loading="lazy"><figcaption>Our favorite kind of love 🍓</figcaption></figure>
+          <figure class="memory-card"><img src="photos/couple-ballgame.jpg" alt="Jon and Arianna at a baseball game" loading="lazy"><figcaption>Making memories together 🍓</figcaption></figure>
+          <figure class="memory-card"><img src="photos/baby-announcement.jpg" alt="A collage of family pictures and an ultrasound" loading="lazy"><figcaption>The sweetest news 🍓</figcaption></figure>
+          <figure class="memory-card ultrasound"><img src="photos/baby-ultrasound.jpg" alt="A cherished ultrasound photo" loading="lazy"><figcaption>Our little berry 🍓</figcaption></figure>
+          <figure class="memory-card"><img src="photos/gender-reveal.jpg" alt="Jon and Arianna at their gender reveal" loading="lazy"><figcaption>A pink little surprise 🍓</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section soft center" id="registry">
+      <div class="inner">
+        <div class="eyebrow">A little sweetness for baby</div>
+        <h2>Our Berry Sweet Registry</h2>
+        <div class="registry-card">
+          <div class="registry-icon">🎁</div>
+          <h3>Our Baby Registry</h3>
+          <p>Your presence is the greatest gift. For those who have asked, we've put together a registry to help us prepare for our little one's arrival.</p>
+          <div class="button-row">
+            <a class="btn btn-primary" target="_blank" rel="noopener" href="https://www.amazon.com/baby-reg/arianna-molina-jon-durham-december-2026-sanantonio/MDW2MRG0VF3B">View Amazon Registry ↗</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section white center" id="rsvp">
+      <div class="inner">
+        <div class="eyebrow">Don’t leave us berry curious</div>
+        <h2>Will You Be There, Sweet Pea?</h2>
+        <p class="narrow">We hope you'll join us for a berry sweet day! Please let us know if you'll be there.</p>
+        <div class="rsvp-card">
+          <h3>Save Your Sweet Spot</h3>
+          <p>Tap below to let us know whether you can make it.</p>
+          <div class="button-row">
+            <a class="btn btn-primary" id="rsvpButton" href="#rsvp-setup">RSVP Here ↗</a>
+          </div>
+          <p class="note" style="margin-top:16px">Please RSVP using our Google Form. We can’t wait to celebrate with you!</p>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="floral">❀ ✿ ❀</div>
+    <p><strong>With love, Jon & Arianna</strong></p>
+    <p>Thank you for being part of our growing family.</p>
+  </footer>
+
+  <script>
+    // Event time: November 21, 2026 at 2:00 PM in San Antonio (Central Time).
+    // ISO timestamp includes the Central Standard Time offset for this November date.
+    const eventDate = new Date("2026-11-21T14:00:00-06:00").getTime();
+
+    function updateCountdown() {
+      const remaining = eventDate - Date.now();
+      if (remaining <= 0) {
+        document.getElementById("days").textContent = "0";
+        document.getElementById("hours").textContent = "0";
+        document.getElementById("minutes").textContent = "0";
+        document.getElementById("seconds").textContent = "0";
+        document.querySelector("#countdown h2").textContent = "Today Is the Day!";
+        return;
+      }
+      const units = {
+        days: Math.floor(remaining / 86400000),
+        hours: Math.floor((remaining % 86400000) / 3600000),
+        minutes: Math.floor((remaining % 3600000) / 60000),
+        seconds: Math.floor((remaining % 60000) / 1000)
+      };
+      for (const [id, value] of Object.entries(units)) {
+        document.getElementById(id).textContent = String(value).padStart(2, "0");
+      }
+    }
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+
+    // Paste your published Google Forms responder URL between the quotes below.
+    const RSVP_FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSf9h_w2PLP8j4PQvy9zvrLTlIWQr4NxyYU1P5y0ZZkpjQvP0g/viewform?usp=publish-editor";
+    const rsvpButton = document.getElementById("rsvpButton");
+    if (RSVP_FORM_URL.startsWith("https://")) {
+      rsvpButton.href = RSVP_FORM_URL;
+      rsvpButton.target = "_blank";
+      rsvpButton.rel = "noopener";
+      rsvpButton.textContent = "RSVP Here ↗";
+    } else {
+      rsvpButton.addEventListener("click", function (event) {
+        event.preventDefault();
+        document.getElementById("rsvp-setup").scrollIntoView({behavior:"smooth"});
+      });
+    }
+  </script>
+</body>
+</html>
