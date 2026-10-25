@@ -1,6 +1,6 @@
 # Jon & Arianna's Berry Sweet Baby Shower Website 🍓
 
-A responsive, scrollable invitation website with a berry-sweet palette, live countdown, event details, Google Maps directions, Amazon registry link, five real photos, and an RSVP section.
+A responsive, scrollable invitation website with a berry-sweet palette, live countdown, event details, Google Maps directions, Amazon and Target registry links, five real photos, and an RSVP section.
 
 ## Event details
 - **Hosts:** Jon & Arianna
@@ -25,3 +25,6 @@ The page is plain HTML, CSS, and JavaScript, so it does not require a paid websi
 
 ## Animated berry update
 This edition adds floating strawberry background stickers, bouncy elements, playful photo tilts, and a clickable berry-rain button. Motion is reduced automatically for visitors who prefer reduced motion. Upload the contents of this folder (not the outer folder) to your GitHub Pages repository to update the live site at the same URL.
+
+## Target registry
+The registry section now includes separate Amazon and Target buttons. Target: https://www.target.com/gift-registry/gift/baby-durham-registry
